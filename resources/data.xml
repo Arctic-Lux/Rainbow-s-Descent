@@ -122,8 +122,8 @@
                 <prop id="12" list="0" val="left"/>
                 <prop id="13" list="0" val="0.4"/>
                 <prop id="14" list="0" val="true"/>
-                <prop id="15" list="0" val="run-r"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="run-r"/>
                 <prop id="17" list="0" val="run-r"/>
                 <prop id="16" list="0" val="run-l"/>
                 <prop id="19" list="0" val="run-r"/>
@@ -226,8 +226,8 @@
                 <prop id="12" list="0" val="250"/>
                 <prop id="13" list="0" val="65"/>
                 <prop id="14" list="0" val="jump-r"/>
-                <prop id="15" list="0" val="jump-l"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="jump-l"/>
                 <prop id="17" list="0" val="Wall Jumping"/>
                 <prop id="16" list="0" val="false"/>
             </s>
@@ -313,6 +313,71 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="220" fixedrot="false" fric="0.2" gid="3" id="475" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Rainbow Dash" oid="-1" pausable="true" rest="0.0" shared="false" sprite="476" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="96" id="476" name="Rainbow Dash" shared="false" width="106">
+        <anim across="13" atlasID="-1" down="1" durations="5000,100,100,200,100,100,100,100,100,100,100,100,100" height="96" id="0" loop="true" name="Idle_right" numframes="13" originx="53" originy="48" width="1378">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="13" atlasID="-1" down="1" durations="5000,100,100,200,100,100,100,100,100,100,100,100,100" height="96" id="1" loop="true" name="Idle_left" numframes="13" originx="53" originy="48" width="1378">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="2" loop="true" name="Walk_right" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="3" loop="true" name="Walk_left" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="7" atlasID="-1" down="1" durations="100,100,100,100,100,100,2000" height="96" id="4" loop="false" name="Shocked_right" numframes="7" originx="53" originy="48" width="742">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Shocked_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="7" atlasID="-1" down="1" durations="100,100,100,100,100,100,2000" height="96" id="5" loop="true" name="Shocked_left" numframes="7" originx="53" originy="48" width="742">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Shocked_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="11" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100" height="96" id="6" loop="false" name="Buck_right" numframes="11" originx="65" originy="48" width="1430">
+            <poly data="4,0,0,130,0,130,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Buck_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="11" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100" height="96" id="7" loop="true" name="Buck_left" numframes="11" originx="65" originy="48" width="1430">
+            <poly data="4,0,0,130,0,130,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Buck_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="12" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="8" loop="true" name="Dash_right" numframes="12" originx="64" originy="48" width="1536">
+            <poly data="4,0,0,128,0,128,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Dash_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="12" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="9" loop="true" name="Dash_left" numframes="12" originx="64" originy="48" width="1536">
+            <poly data="4,0,0,128,0,128,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Dash_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="10" loop="true" name="Hover_right" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Hover_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="11" loop="true" name="Hover_left" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Hover_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="12" loop="true" name="Fly_slow_right" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="13" loop="true" name="Fly_slow_left" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="14" loop="true" name="Fly_fast_right" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_fast_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="15" loop="true" name="Fly_fast_left" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_fast_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="17" loop="false" name="Fly_hurt_left" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_hurt_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="16" loop="false" name="Fly_hurt_right" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_hurt_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="96" id="19" loop="true" name="Hurt_left" numframes="4" originx="53" originy="48" width="424">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Hurt_right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="96" id="18" loop="false" name="Hurt_right" numframes="4" originx="53" originy="48" width="424">
+            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Hurt_right" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <custom-block blocktag="custom-474" blocktype="ACTION" code="~.say(&quot;Disable Anti Aliasing&quot;, &quot;RotateActor&quot;, ~);" desc="Toggles anti-aliasing for a rotating actor." global="false" gui="set anti-aliasing to %1 for %0" id="474" message="RotateActor" name="RotateActor" oid="-1" return="VOID" shared="false" snippetID="219">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="a" order="1" type="BOOLEAN"/>
