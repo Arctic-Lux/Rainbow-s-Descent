@@ -12,7 +12,7 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="0" id="432" name="Jumper PLACEHOLDER 1" sx="1.0" sy="1.0" x="42" y="303" z="3"/>
+        <actor a="0.0" aid="1" c="false" group="0" id="475" name="Rainbow Dash 1" sx="1.0" sy="1.0" x="38" y="245" z="3"/>
     </actors>
     <snippets/>
     <terrain>

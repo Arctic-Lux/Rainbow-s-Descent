@@ -143,7 +143,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="0"/>
                 <prop id="16" list="0" val="0"/>
-                <prop id="19" list="0" val="-1"/>
+                <prop id="19" list="0" val="No Sound"/>
                 <prop id="18" list="0" val="0.65"/>
                 <prop id="21" list="0" val="Jumping"/>
                 <prop id="20" list="0" val="30"/>
@@ -314,75 +314,256 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="220" fixedrot="false" fric="0.2" gid="3" id="475" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Rainbow Dash" oid="-1" pausable="true" rest="0.0" shared="false" sprite="476" static="false" touchable="true">
-        <snippets/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="220" fixedrot="true" fric="0.2" gid="0" id="475" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Rainbow Dash" oid="-1" pausable="true" rest="0.0" shared="false" sprite="476" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="169">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val="Idle_right"/>
+                <prop id="4" list="0" val="Idle_left"/>
+                <prop id="5" list="1" val="">
+                    <text order="0" value="Ground Pounding"/>
+                    <text order="1" value="Ducking"/>
+                    <text order="2" value="Wall Sliding"/>
+                    <text order="3" value="Falling"/>
+                    <text order="4" value="Wall Jumping"/>
+                    <text order="5" value="Air Jumping"/>
+                    <text order="6" value="Jumping"/>
+                    <text order="7" value="Running"/>
+                    <text order="8" value="Walking"/>
+                </prop>
+                <prop id="6" list="0" val="false"/>
+                <prop id="7" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="175">
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="202">
+                <prop id="1" list="0" val="0.3"/>
+                <prop id="2" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="110">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="run"/>
+                <prop id="3" list="0" val="true"/>
+                <prop id="4" list="0" val="0.0"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="false"/>
+                <prop id="7" list="0" val="0"/>
+                <prop id="8" list="0" val="100.0"/>
+                <prop id="9" list="0" val="35.0"/>
+                <prop id="10" list="0" val="40.0"/>
+                <prop id="11" list="0" val="right"/>
+                <prop id="12" list="0" val="left"/>
+                <prop id="13" list="0" val="0.4"/>
+                <prop id="14" list="0" val="true"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="Dash_right"/>
+                <prop id="17" list="0" val="Dash_right"/>
+                <prop id="16" list="0" val="Dash_left"/>
+                <prop id="19" list="0" val="Dash_right"/>
+                <prop id="18" list="0" val="Dash_left"/>
+                <prop id="21" list="0" val="Running"/>
+                <prop id="20" list="0" val="Dash_left"/>
+            </s>
+            <s enabled="true" id="163">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="jump"/>
+                <prop id="8" list="0" val="0.075"/>
+                <prop id="12" list="0" val="Jump_right"/>
+                <prop id="13" list="0" val="Jump_left"/>
+                <prop id="14" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="0"/>
+                <prop id="17" list="0" val="0"/>
+                <prop id="16" list="0" val="0"/>
+                <prop id="19" list="0" val="-1"/>
+                <prop id="18" list="0" val="0.65"/>
+                <prop id="21" list="0" val="Jumping"/>
+                <prop id="20" list="0" val="30.0"/>
+            </s>
+            <s enabled="true" id="108">
+                <prop id="1" list="0" val="right"/>
+                <prop id="2" list="0" val="left"/>
+                <prop id="3" list="0" val="0.9"/>
+                <prop id="4" list="0" val="0.975"/>
+                <prop id="5" list="0" val="0.975"/>
+                <prop id="6" list="0" val="0.975"/>
+                <prop id="7" list="0" val="0.99"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="107">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="false"/>
+                <prop id="3" list="1" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="115">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="false"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="0" val="0"/>
+                <prop id="6" list="0" val="1.0"/>
+                <prop id="7" list="0" val="jump"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="50"/>
+                <prop id="10" list="0" val="Jump_right"/>
+                <prop id="11" list="0" val="Jump_left"/>
+                <prop id="12" list="0" val="Air Jumping"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="114">
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="Jump_right"/>
+                <prop id="4" list="0" val="Jump_left"/>
+                <prop id="5" list="0" val="0"/>
+                <prop id="6" list="0" val="Falling"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="178">
+                <prop id="1" list="0" val="right"/>
+                <prop id="2" list="0" val="left"/>
+                <prop id="3" list="0" val="85"/>
+                <prop id="4" list="0" val="20.0"/>
+                <prop id="5" list="0" val="false"/>
+                <prop id="6" list="0" val="Walk_right"/>
+                <prop id="7" list="0" val="Walk_left"/>
+                <prop id="8" list="0" val="Idle_right"/>
+                <prop id="9" list="0" val="Idle_left"/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="11" list="1" val="">
+                    <text order="0" value="Is Ducking"/>
+                </prop>
+                <prop id="12" list="0" val="Walking"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="179">
+                <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="false"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="5" list="0" val="false"/>
+                <prop id="6" list="0" val="true"/>
+                <prop id="7" list="0" val="false"/>
+                <prop id="8" list="0" val="up"/>
+                <prop id="9" list="0" val="false"/>
+                <prop id="10" list="0" val="0"/>
+                <prop id="11" list="0" val="290"/>
+                <prop id="12" list="0" val="250"/>
+                <prop id="13" list="0" val="65"/>
+                <prop id="14" list="0" val="Jump_right"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="Jump_left"/>
+                <prop id="17" list="0" val="Wall Jumping"/>
+                <prop id="16" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="123">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="180">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="false"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="5" list="0" val="false"/>
+                <prop id="6" list="0" val="0"/>
+                <prop id="7" list="0" val="left"/>
+                <prop id="8" list="0" val="right"/>
+                <prop id="9" list="0" val="20"/>
+                <prop id="10" list="0" val="Jump_right"/>
+                <prop id="11" list="0" val="Jump_left"/>
+                <prop id="12" list="0" val="true"/>
+                <prop id="13" list="0" val="false"/>
+                <prop id="14" list="0" val="Wall Sliding"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="181">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="groundpound"/>
+                <prop id="3" list="0" val="duck"/>
+                <prop id="4" list="0" val="true"/>
+                <prop id="5" list="0" val="30"/>
+                <prop id="6" list="0" val="Jump_right"/>
+                <prop id="7" list="0" val="Jump_left"/>
+                <prop id="8" list="0" val="0"/>
+                <prop id="9" list="0" val="Ground Pounding"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="96" id="476" name="Rainbow Dash" shared="false" width="106">
         <anim across="13" atlasID="-1" down="1" durations="5000,100,100,200,100,100,100,100,100,100,100,100,100" height="96" id="0" loop="true" name="Idle_right" numframes="13" originx="53" originy="48" width="1378">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle_right" rest="0.0" sensor="false"/>
+            <poly data="4,34,0,89,0,89,90,34,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="13" atlasID="-1" down="1" durations="5000,100,100,200,100,100,100,100,100,100,100,100,100" height="96" id="1" loop="true" name="Idle_left" numframes="13" originx="53" originy="48" width="1378">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle_right" rest="0.0" sensor="false"/>
+            <poly data="4,17,0,72,0,72,90,17,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle_right" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="2" loop="true" name="Walk_right" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk_right" rest="0.0" sensor="false"/>
+        <anim across="16" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="2" loop="true" name="Walk_right" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,30,0,93,0,93,90,30,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk_right" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="3" loop="true" name="Walk_left" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk_right" rest="0.0" sensor="false"/>
+        <anim across="16" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="3" loop="true" name="Walk_left" numframes="16" originx="53" originy="48" width="1696">
+            <poly data="4,12,0,75,0,75,90,12,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="7" atlasID="-1" down="1" durations="100,100,100,100,100,100,2000" height="96" id="4" loop="false" name="Shocked_right" numframes="7" originx="53" originy="48" width="742">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Shocked_right" rest="0.0" sensor="false"/>
+            <poly data="4,34,0,89,0,89,90,34,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Shocked_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="7" atlasID="-1" down="1" durations="100,100,100,100,100,100,2000" height="96" id="5" loop="true" name="Shocked_left" numframes="7" originx="53" originy="48" width="742">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Shocked_right" rest="0.0" sensor="false"/>
+            <poly data="4,17,0,72,0,72,90,17,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Shocked_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="11" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100" height="96" id="6" loop="false" name="Buck_right" numframes="11" originx="65" originy="48" width="1430">
-            <poly data="4,0,0,130,0,130,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Buck_right" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,130,0,130,90,0,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Buck_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="11" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100" height="96" id="7" loop="true" name="Buck_left" numframes="11" originx="65" originy="48" width="1430">
-            <poly data="4,0,0,130,0,130,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Buck_right" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,130,0,130,90,0,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Buck_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="12" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="8" loop="true" name="Dash_right" numframes="12" originx="64" originy="48" width="1536">
-            <poly data="4,0,0,128,0,128,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Dash_right" rest="0.0" sensor="false"/>
+            <poly data="4,41,0,116,0,116,83,41,83" density="0.1" fric="0.2" gid="-1000" id="0" name="Dash_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="12" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="9" loop="true" name="Dash_left" numframes="12" originx="64" originy="48" width="1536">
-            <poly data="4,0,0,128,0,128,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Dash_right" rest="0.0" sensor="false"/>
+            <poly data="4,10,1,85,1,85,84,10,84" density="0.1" fric="0.2" gid="-1000" id="0" name="Dash_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="10" loop="true" name="Hover_right" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Hover_right" rest="0.0" sensor="false"/>
+            <poly data="4,34,0,89,0,89,90,34,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Hover_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="11" loop="true" name="Hover_left" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Hover_right" rest="0.0" sensor="false"/>
+            <poly data="4,17,0,72,0,72,90,17,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Hover_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="12" loop="true" name="Fly_slow_right" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_right" rest="0.0" sensor="false"/>
+            <poly data="4,30,0,93,0,93,90,30,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="13" loop="true" name="Fly_slow_left" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_right" rest="0.0" sensor="false"/>
+            <poly data="4,12,0,75,0,75,90,12,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="16" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="14" loop="true" name="Fly_fast_right" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_fast_right" rest="0.0" sensor="false"/>
+            <poly data="4,30,0,105,0,105,79,30,79" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_fast_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="16" atlasID="-1" down="1" durations="50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50" height="96" id="15" loop="true" name="Fly_fast_left" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_fast_right" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,75,0,75,79,0,79" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_fast_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="17" loop="false" name="Fly_hurt_left" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_hurt_right" rest="0.0" sensor="false"/>
+            <poly data="4,17,0,72,0,72,90,17,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_hurt_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="16" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="96" id="16" loop="false" name="Fly_hurt_right" numframes="16" originx="53" originy="48" width="1696">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_hurt_right" rest="0.0" sensor="false"/>
+            <poly data="4,34,0,89,0,89,90,34,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Fly_hurt_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="96" id="19" loop="true" name="Hurt_left" numframes="4" originx="53" originy="48" width="424">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Hurt_right" rest="0.0" sensor="false"/>
+            <poly data="4,17,0,72,0,72,90,17,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Hurt_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="96" id="18" loop="false" name="Hurt_right" numframes="4" originx="53" originy="48" width="424">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Hurt_right" rest="0.0" sensor="false"/>
+            <poly data="4,34,0,89,0,89,90,34,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Hurt_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" atlasID="-1" down="1" durations="100" height="96" id="21" loop="true" name="Jump_left" numframes="1" originx="53" originy="48" width="106">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Jump_right" rest="0.0" sensor="false"/>
+            <poly data="4,17,0,72,0,72,83,17,83" density="0.1" fric="0.2" gid="-1000" id="0" name="Jump_right" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" atlasID="-1" down="1" durations="100" height="96" id="20" loop="true" name="Jump_right" numframes="1" originx="53" originy="48" width="106">
-            <poly data="4,0,0,106,0,106,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Jump_right" rest="0.0" sensor="false"/>
+            <poly data="4,34,0,89,0,89,83,34,83" density="0.1" fric="0.2" gid="-1000" id="0" name="Jump_right" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-474" blocktype="ACTION" code="~.say(&quot;Disable Anti Aliasing&quot;, &quot;RotateActor&quot;, ~);" desc="Toggles anti-aliasing for a rotating actor." global="false" gui="set anti-aliasing to %1 for %0" id="474" message="RotateActor" name="RotateActor" oid="-1" return="VOID" shared="false" snippetID="219">
